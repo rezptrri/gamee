@@ -74,17 +74,18 @@ const W=1280,H=720,$=id=>document.getElementById(id);
 const cv=$('cv'),ctx=cv.getContext('2d');
 // ===== SOAL BAWAAN: ubah soal di sini (1 baris = 1 soal: Pertanyaan | Jawaban benar | salah 1 | salah 2 | salah 3) =====
 // Kalau diisi, halaman awal hanya menampilkan nama tim + ukuran bubble. Kosongkan (``) untuk kembali ke mode editor.
-const SOAL_BAWAAN=`Singkatan dari HTML? | HyperText Markup Language | HyperText Make Language | High Tech Markup Level | Home Tool Markup Language
-Bahasa untuk memberi gaya tampilan web? | CSS | SQL | PHP | Python
-Ikan bernapas dengan | Jakarta | Surabaya | Medan | Bandung
-5 x 6 = ? | 30 | 25 | 35 | 56
-Tag HTML untuk judul terbesar? | h1 | p | div | title`;
+const SOAL_BAWAAN=`Planet terbesar di tata surya adalah? | Jupiter | Saturnus | Bumi | Mars
+Hewan tercepat di darat adalah? | Cheetah | Singa | Kuda | Harimau
+Berapa jumlah hari dalam satu minggu? | 7 | 5 | 6 | 8
+Ibukota Jepang adalah? | Tokyo | Seoul | Beijing | Bangkok
+Alat untuk mengukur suhu disebut? | Termometer | Barometer | Speedometer | Voltmeter`;
+
 // ===========================================================================================================
-const EX=`Singkatan dari HTML? | HyperText Markup Language | HyperText Make Language | High Tech Markup Level | Home Tool Markup Language
-Bahasa untuk memberi gaya tampilan web? | CSS | SQL | PHP | Python
-Ibu kota Indonesia? | Jakarta | Surabaya | Medan | Bandung
-5 x 6 = ? | 30 | 25 | 35 | 56
-Tag HTML untuk judul terbesar? | h1 | p | div | title`;
+const EX=`Planet terbesar di tata surya adalah? | Jupiter | Saturnus | Bumi | Mars
+Hewan tercepat di darat adalah? | Cheetah | Singa | Kuda | Harimau
+Berapa jumlah hari dalam satu minggu? | 7 | 5 | 6 | 8
+Ibukota Jepang adalah? | Tokyo | Seoul | Beijing | Bangkok
+Alat untuk mengukur suhu disebut? | Termometer | Barometer | Speedometer | Voltmeter`;
 $('src').value=EX;
 const KEY='gb_soal_v1';
 function hideSrc(h){$('src').classList.toggle('hide',h);$('eye').textContent=h?'👁 Tampilkan soal':'🙈 Sembunyikan soal'}
